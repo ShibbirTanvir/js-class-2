@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS links-->
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <!-- jQuery UI -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+
+        <title>jQuery UI</title>
+    </head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+
+        <h2>Accordion - Collapse content</h2>
+        <!-- markup -->
+        <div id="accordion">
+          <h3>Section 1</h3>
+          <div>
+            <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+          </div>
+          <h3>Section 2</h3>
+          <div>
+            <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+          </div>
+          <h3>Section 3</h3>
+          <div>
+            <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
+            <ul>
+              <li>List item one</li>
+              <li>List item two</li>
+              <li>List item three</li>
+            </ul>
+          </div>
+          <h3>Section 4</h3>
+          <div>
+            <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+        </div>
+        
+
+
+        <h2 class="my-3">Autocomplete</h2>
+        <div class="ui-widget">
+          <label for="tags">Tags: </label>
+          <input id="tags">
+        </div>
+
+        <h2 class="my-3">Menu</h2>
+        <ul id="menu">
+          <li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+          <li><div>Books</div></li>
+          <li><div>Clothing</div></li>
+          <li><div>Electronics</div>
+            <ul>
+              <li class="ui-state-disabled"><div>Home Entertainment</div></li>
+              <li><div>Car Hifi</div></li>
+              <li><div>Utilities</div></li>
+            </ul>
+          </li>
+          <li><div>Movies</div></li>
+          <li><div>Music</div>
+            <ul>
+              <li><div>Rock</div>
+                <ul>
+                  <li><div>Alternative</div></li>
+                  <li><div>Classic</div></li>
+                </ul>
+              </li>
+              <li><div>Jazz</div>
+                <ul>
+                  <li><div>Freejazz</div></li>
+                  <li><div>Big Band</div></li>
+                  <li><div>Modern</div></li>
+                </ul>
+              </li>
+              <li><div>Pop</div></li>
+            </ul>
+          </li>
+          <li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+        </ul>
+
+
+
+        <h2 class="my-3">Switch Class</h2>
+        <div class="toggler">
+          <div id="effect" class="newClass ui-corner-all">
+              Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede.
+          </div>
+        </div>
+        <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+
+
+
+
+        <h2 class="my-3">Hide</h2>
+        <div class="hide-toggler">
+          <div id="h-effect" class="ui-widget-content ui-corner-all">
+            <h3 class="ui-widget-header ui-corner-all">Hide</h3>
+            <p>
+              Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae, mi.
+            </p>
+          </div>
+        </div>
+         
+        <select name="effects" id="effectTypes">
+          <option value="blind">Blind</option>
+          <option value="bounce">Bounce</option>
+          <option value="clip">Clip</option>
+          <option value="drop">Drop</option>
+          <option value="explode">Explode</option>
+          <option value="fade">Fade</option>
+          <option value="fold">Fold</option>
+          <option value="highlight">Highlight</option>
+          <option value="puff">Puff</option>
+          <option value="pulsate">Pulsate</option>
+          <option value="scale">Scale</option>
+          <option value="shake">Shake</option>
+          <option value="size">Size</option>
+          <option value="slide">Slide</option>
+        </select>
+         
+        <button id="h-button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!--js links-->
+
+    <!--jQuery CDN links
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- jQuery UI -->
+   <!--  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $( "#accordion" ).accordion({
+          collapsible: true
+        });
+
+
+
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags
+        });
+
+
+
+        $( "#menu" ).menu();
+
+
+
+        $( "#button" ).on( "click", function() {
+          $( ".newClass" ).switchClass( "newClass", "anotherNewClass", 1000 );
+          $( ".anotherNewClass" ).switchClass( "anotherNewClass", "newClass", 1000 );
+        });
+
+
+
+
+
+        // run the currently selected effect
+        function runEffect() {
+          // get effect type from
+          var selectedEffect = $( "#effectTypes" ).val();
+     
+          // Most effect types need no options passed by default
+          var options = {};
+          // some effects have required parameters
+          if ( selectedEffect === "scale" ) {
+            options = { percent: 50 };
+          } else if ( selectedEffect === "size" ) {
+            options = { to: { width: 200, height: 60 } };
+          }
+     
+          // Run the effect
+          $( "#h-effect" ).hide( selectedEffect, options, 1000, callback );
+        };
+     
+        // Callback function to bring a hidden box back
+        function callback() {
+          setTimeout(function() {
+            $( "#h-effect" ).removeAttr( "style" ).hide().fadeIn();
+          }, 1000 );
+        };
+     
+        // Set effect from select menu value
+        $( "#h-button" ).on( "click", function() {
+          runEffect();
+        });
+
+
+      })
+    </script>
+  
+  </body>
+</html>

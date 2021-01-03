@@ -1,0 +1,42 @@
+.ui-menu { 
+	width: 150px; 
+}
+#button { 
+	padding: .5em 1em; 
+	text-decoration: none; 
+}
+#effect { 
+	position: relative; 
+}
+.newClass { 
+	width: 240px;  
+	padding: 1em; 
+	letter-spacing: 0; 
+	margin: 0; 
+}
+.anotherNewClass { 
+	text-indent: 40px; 
+	letter-spacing: .2em; 
+	width: 410px; 
+	height: 100px; 
+	padding: 30px; 
+	margin: 10px; 
+	font-size: 1.1em;
+}
+.hide-toggler { 
+	width: 500px; 
+	height: 200px; 
+}
+ #h-button { 
+ 	padding: .5em 1em; 
+ 	text-decoration: none; 
+ }
+ #h-effect { 
+ 	width: 240px; 
+ 	height: 170px; 
+ 	padding: 0.4em; 
+ 	position: relative; }
+ #h-effect h3 { 
+ 	margin: 0; 
+ 	padding: 0.4em; 
+ 	text-align: center; }

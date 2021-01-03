@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--CSS links-->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+
+        <title>Js and JQ</title>
+    </head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg">
+
+        <h1 class="my-3">jQuery events</h1>
+
+        <!-- slidToggle -->
+        <div class="panel my-1">Click Here To Slide The Pannel</div>
+        <div class="flip">The jQuery Bower package contains additional files besides the default distribution. In most cases you can ignore these files, however if you wish to download the default release on its own you can use Bower to install jQuery from one of the above urls instead of the registered package. For example, if you wish to install just the compressed jQuery file, you can install just that file with the following command:</div>
+
+        <hr>
+        <!-- hide and show -->
+        <p class="h-s-p">If you click on the "Hide" button, I will disappear.</p>
+        <button id="hide" class="btn btn-success">Hide</button>
+        <button id="show" class="btn btn-success">Show</button>
+
+        <hr>
+        <!-- toggle button -->
+        <p class="toggle-p my-2">This is a paragraph with little content.</p>
+        <button id="btn-toggle" class="btn btn-success">Toggle between hiding and showing the paragraphs</button>
+
+
+        <hr>
+        <!-- fade in boxes -->
+        <button id="fade-btn" class="btn btn-success">Click to fade in boxes</button><br><br>
+
+        <div id="div1"></div><br>
+        <div id="div2"></div><br>
+        <div id="div3"></div>
+
+
+
+        <hr>
+        <!-- animation -->
+        <div class="wrapper">
+          <button id="animation-btn" class="btn btn-success">Start Animation</button>
+          <div class="animation-div my-2"></div>
+        </div>
+
+
+        <hr>
+        <!-- toggle animation -->
+        <div class="wrapper">
+          <button id="toggle-ani-btn" class="btn btn-success">Start Animation</button>
+          <div class="toggle-ani-div my-2"></div>
+        </div>
+
+
+        <hr>
+        <!-- hide-alert -->
+        <button id="hide-alert" class="btn btn-success">Hide</button>
+
+        <p class="hide-alert my-2">This is a paragraph with little content.</p>
+
+
+        <hr>
+        <!-- chaining button -->
+        <p id="p1">jQuery is fun!!</p>
+        <button id="chaining-btn" class="btn btn-success">Click me</button>
+
+
+        <hr>
+        <!-- Get Content -->
+        <p id="test">This is some <b>bold</b> text in a paragraph.</p>
+        <button id="btn1" class="btn btn-success">Show Text</button>
+        <button id="btn2" class="btn btn-success">Show HTML</button>
+
+
+        <hr>
+        <!-- appended text -->
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ol>
+
+        <button id="append-btn1" class="btn btn-success">Append text</button>
+        <button id="append-btn2" class="btn btn-success">Append list items</button>
+
+
+        <hr>
+        <!-- remove div -->
+        <div id="remove-div">
+          <p>This is a paragraph in the div.</p>
+          <p>This is another paragraph in the div.</p>
+        </div>
+        <button id="remove-btn" class="btn btn-success">Remove div element</button>
+
+
+
+        <hr>
+        <!-- empty element -->
+        <div id="empty-div">
+          <p>This is a paragraph in the div.</p>
+          <p>This is a paragraph in the div.</p>
+        </div>
+
+        <button id="empty-btn" class="btn btn-success">Click to empty the div</button>
+
+
+
+        <hr>
+        <!-- add class -->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+
+        <div id="important-div">This is some important text!</div><br>
+
+        <button id="add-class-btn" class="btn btn-success">Add classes to elements</button>
+
+
+
+
+        <hr>
+        <!-- remove class -->
+        <h1 class="blue">Heading 1</h1>
+        <h2 class="blue">Heading 2</h2>
+
+        <p class="blue">This is a paragraph.</p>
+        <p>This is another paragraph.</p>
+
+        <button id="remove-class-btn" class="btn btn-success">Remove class from elements</button>
+
+
+
+        <hr>
+        <!-- css apply -->
+        <p class="css-p" style="background-color:lightgreen">This is a paragraph.</p>
+        <p class="css-p" style="background-color:lightgray">This is a paragraph.</p>
+        <p class="css-p" style="background-color:lightblue">This is a paragraph.</p>
+
+        <button id="css-btn" class="btn btn-success">Return background-color of p</button>
+
+
+
+
+        <hr>
+        <!-- css background color change -->
+        <p class="bg-change-p" style="background-color:#ff0000">This is a paragraph.</p>
+        <p class="bg-change-p" style="background-color:#00ff00">This is a paragraph.</p>
+        <p class="bg-change-p" style="background-color:#0000ff">This is a paragraph.</p>
+
+
+        <button id="bg-change-btn" class="btn btn-success">Set background-color of p</button>
+
+
+
+        <hr>
+        <h1 class="my-3">js events</h1>
+
+
+        <!-- onclick -->
+        <button onclick="timeshow()" class="btn btn-success my-2">The time is?</button>
+
+        <p id="time-show-btn"></p>
+
+
+        <hr>
+        <!-- js-animation -->
+        <div id="js-animation" onclick="jsanimation()">Click me to start the animation.</div> 
+
+
+
+
+        <hr>
+        <!-- before print -->
+        <h1 onbeforeprint="beforeprint()">Try to print this document</h1>
+        <p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
+
+
+
+        <hr>
+        <!-- input upper case -->
+        Enter your name: <input type="text" id="fname" onblur="inputuppercase()">
+
+
+
+        <hr>
+        <!-- change -->
+        <p>Select a new car from the list.</p>
+
+        <select id="mySelect" onchange="change()">
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Volvo">Volvo</option>
+        </select>
+
+        <p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+
+        <p id="selectedcar"></p>
+
+
+
+        <hr>
+        <!-- click me -->
+        <p id="clickme" onclick="clickme()">Click me.</p>
+
+
+
+        <a href="jQ-UI/index.html" class="btn btn-success" target="blank">jQ UI</a>
+        <a href="jQ-plugin/index.html" class="btn btn-success" target="blank">jQ Plugin</a>
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+    <!--js links-->
+
+    <!--jQuery CDN links
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        
+        // slideToggle
+        $('.panel').click(function(){
+          $('.flip').slideToggle('slow');
+        })
+
+        // hide and show
+        $("#hide").click(function(){
+          $(".h-s-p").hide();
+        });
+        $("#show").click(function(){
+          $(".h-s-p").show(1000);
+        });
+
+        // togglebutton
+        $("#btn-toggle").click(function(){
+          $(".toggle-p").toggle();
+        });
+
+        // fade in boxes
+        $("#fade-btn").click(function(){
+          $("#div1").fadeToggle();
+          $("#div2").fadeToggle("slow");
+          $("#div3").fadeToggle(3000);
+        });
+
+        // animation
+        $("#animation-btn").click(function(){
+          $(".animation-div").animate({left: '350px'});
+        });  
+
+        // toggle animation
+        $("#toggle-ani-btn").click(function(){
+          $(".toggle-ani-div").animate({
+            height: 'toggle'
+          });
+        });
+
+        // hide-alert
+        $("#hide-alert").click(function(){
+          $(".hide-alert").hide("slow", function(){
+            alert("The paragraph is now hidden");
+          });
+        });
+
+        // chaining button
+        $("#chaining-btn").click(function(){
+          $("#p1").css("color", "green")
+            .slideUp(2000)
+            .slideDown(2000);
+        });
+
+        // Get Content
+        $("#btn1").click(function(){
+          alert("Text: " + $("#test").text());
+        });
+        $("#btn2").click(function(){
+          alert("HTML: " + $("#test").html());
+        });
+
+        // appended text
+        $("#append-btn1").click(function(){
+          $("p").append(" <b>Appended text</b>.");
+        });
+
+        $("#append-btn2").click(function(){
+          $("ol").append("<li>Appended item</li>");
+        });
+
+
+        // remove div
+        $("#remove-btn").click(function(){
+          $("#remove-div").remove();
+        });
+
+
+        // empty-div
+        $('#empty-btn').click(function(){
+          $("#empty-div").empty();
+        })
+
+
+        // add class
+        $("#add-class-btn").click(function(){
+          $("h1, h2").addClass("blue");
+          $("#important-div").addClass("important");
+        });
+
+
+        // remove class
+        $("#remove-class-btn").click(function(){
+          $("h1, h2, p").removeClass("blue");
+        })
+
+
+        // css apply
+        $("#css-btn").click(function(){
+          alert("Background color = " + $(".css-p").css("background-color"));
+        });
+
+        $("#bg-change-btn").click(function(){
+          $(".bg-change-p").css("background-color", "lightgray");
+        });
+
+
+      })
+    </script>
+  
+  </body>
+</html>

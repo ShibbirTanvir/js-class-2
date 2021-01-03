@@ -1,0 +1,232 @@
+ @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+:root {
+    --body-font: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--body-font);
+}
+
+.single-coutnerup .count-num {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fc4444;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.single-coutnerup {
+    text-align: center;
+}
+
+.single-coutnerup .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card {
+    margin-bottom: 30px;
+}
+
+.card .card-header .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.card .card-body code {
+    background-color: #efecec;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.header .title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.header .title::first-letter {
+    color: #fc4444;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+
+ul.menu li {
+    display: inline-block;
+}
+
+ul.menu li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 500ms;
+    text-decoration: none;
+}
+
+ul.menu li a:hover {
+    color: #fc4444;
+}
+
+ul.menu li+li {
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-size:     72px;
+  line-height:   1.5;
+  color: #2c3e50;
+  font-weight:   100;
+}
+
+#container {
+  width:  980px;
+  margin: 0 auto;
+}
+
+section {
+  height: 300px;
+  margin: 60px 0;
+}
+
+.section--purple {
+  background-color: #9b59b6;
+}
+
+.section--blue {
+  background-color: #3498db;
+}
+
+.section--green {
+  background-color: #2ecc71;
+}
+
+#main {
+  text-align: center;
+}
+
+#more {
+  margin: 20px auto 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.demo-box {
+  border: 1px solid #23241f;
+  position: relative;
+  padding: 1.5em 0;
+  text-align: center;
+}
+
+.strong {
+  font-family: 'franklin-gothic-ext-comp-urw', sans-serif;
+  text-transform: uppercase;
+}
+
+.puffy {
+  font-family: 'cooper-black-std', serif;
+  color: #ff3300;
+}
+.demo {
+  color: #ff3300;
+  display:flex;
+  justify-content: center;
+  margin: 0;
+  word-break: keep-all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.demo-table {
+    display: table;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(39, 35, 51, 0.6);
+    color: #fff;
+}
+.demo-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.demo-carousel {
+    background-color: rgb(39, 35, 51);
+}
+.demo-carousel .demo-carousel-item {
+    width: 33.33%;
+    min-height: 300px;
+}
+
+.jarallax-keep-img {
+    position: relative;
+    z-index: 0;
+}
+.jarallax-keep-img > .jarallax-img {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    z-index: -100;
+}
+.jarallax {
+    min-height: 600px;
+}
+.demo-gap {
+    padding: 50px;
+    overflow: hidden;
+}
